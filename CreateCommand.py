@@ -1,4 +1,5 @@
 import os, stat
+
 try:
     fileName = input('File to convert in command (bash): ')
 
@@ -11,7 +12,7 @@ try:
         print('Error: not redable.')
         quit()
     rows = inputFile.readlines()
-    inputFile.close
+    inputFile.close()
 
     #output file
     finalName = fileName[: len(fileName) - 3 ]
